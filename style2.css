@@ -23,26 +23,22 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  overflow: auto;
+  -webkit-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
 }
 
 .grid__item--text {
-  position: absolute;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  position: relative;
+  -webkit-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
   opacity: 0;
   border: 1px solid black;
   border-radius: 20px;
 }
 
-.grid__item--img:hover {
-  opacity: 0.2;
-}
-
 .grid__item--text:hover {
-  opacity: 1;
+  -webkit-transition: 1;
+  transition: 1;
 }
 
 img {
